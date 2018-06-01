@@ -1,0 +1,44 @@
+form {
+  text-align: left;
+
+  input {
+    height: 30px;
+    width : 100%;
+    font-size : 20px;    
+  }
+
+  label {
+    position : absolute;
+    left : -10000px;
+  } 
+}
+
+ul.people {
+    list-style: none;
+
+    li {
+        display : inline-block;
+        width : 100%;
+    }
+}
+
+//tablet
+@media screen and (min-width : 800px) {
+    ul.people {
+        li {
+            width : 50%;
+        }
+    }
+}
+
+//desktop
+@media screen and (min-width : 1100px) {
+    ul.people {
+        li {
+            width : 33%;
+        }
+    }
+}
+
+
+

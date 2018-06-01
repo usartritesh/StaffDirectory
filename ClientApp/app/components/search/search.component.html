@@ -1,0 +1,13 @@
+<section>
+    <form>
+        <label for="search-term">Search</label>
+        <input type="text" id="search-term" name="Search term" [formControl]="searchTerm" placeholder="Enter your search term" />
+    </form>
+</section> 
+<section>
+    <ul class="people">
+        <li *ngFor="let person of people | async" >
+            <person [person]="person"></person>
+        </li>
+    </ul>
+</section>
